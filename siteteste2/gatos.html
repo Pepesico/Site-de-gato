@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site de Gatos</title>
+</head>
+<body>
+	<h1>Clique para ver um gato!</h1>
+	<img id="cat-image" src="siteteste/cat1" onclick="showCat()">
+	<script>
+		function showCat() {
+			var images = ["cat1.jpg", "cat2.jpg", "cat3.jpg"]; // Adicione o caminho para as imagens de gato aqui
+			var randomIndex = Math.floor(Math.random() * images.length);
+			var selectedImage = images[randomIndex];
+			document.getElementById("cat-image").src = selectedImage;
+		}
+	</script>
+</body>
+</html>
